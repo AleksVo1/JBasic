@@ -1,6 +1,8 @@
-package HomeWork4;/*
-Розрахунок зарплатні. (*Підвищенної складності, 10 балів)
-На вхід програми подається вартість години та вісоток податку.
+package homeWork4;
+
+import java.util.Calendar;
+/*
+На вхід програми подається вартість години та відсоток податку.
 Вивести зарплатню за кожен місяць та за рік загалом з та без податку.
 Враховувати, що:
 - рік не високосний
@@ -16,34 +18,46 @@ DEC XX YY
 TOTAL: XX YY
  */
 
-import java.util.Scanner;
-
 public class hw4_4 {
     public static void main (String[] args){
-     int costPerHour = Integer.parseInt(args[0]);
-     double tax = Integer.parseInt(args[1]);
-     int workingHoursPerDay = 8;
-     int weeks = 4;
-     int workingDaysInWeek = 5;
-     int holidaysInWeek = 2;
-     int year = 365;
-     int costPerWorkingDayWithoutTax = workingHoursPerDay * costPerHour;
-     double costPerWorkingDayWithTax = workingHoursPerDay * costPerHour * (tax/100+1);
 
-     System.out.println("Введіть номер місяця від 1 до 12 ");
-     Scanner sc = new Scanner(System.in);
-     int months = sc.nextInt();
-     int days;
-     switch (months) {
+        int hourlyCost = Integer.parseInt(args[0]);
+        double taxPercentage = Integer.parseInt(args[1]);
 
-        case 1:
-            int JUN;
+        int[] daysInMonth = {31,28,31,30,31,30,31,31,30,31,30,31};
+        String[] months = {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"};
 
+        int workHoursInDay = 8;
 
-        case 2:
-            int FEB;
+        int totalSalaryWithoutTax = 0;
+        int totalSalaryWithTax = 0;
 
+        for (int i = 0; i < 12; i++) {
+            int days = daysInMonth[i];
 
-    }
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(Calendar.MONTH, i);
+            calendar.set(Calendar.DAY_OF_MONTH, 1);
+            int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+
+            int workDays = 0;
+            for (int j = 1; j <= days; j++) {
+                if (dayOfWeek != Calendar.SATURDAY && dayOfWeek != Calendar.SUNDAY) {
+                    workDays++;
+                }
+                dayOfWeek = (dayOfWeek % 7) + 1;
+            }
+
+            int workHours = workDays * workHoursInDay;
+            int salaryWithoutTax = workHours * hourlyCost;
+            int salaryWithTax = (int) Math.round(salaryWithoutTax * (1 - taxPercentage/100));
+
+            totalSalaryWithoutTax += salaryWithoutTax;
+            totalSalaryWithTax += salaryWithTax;
+
+            System.out.println(months[i] + " " + salaryWithoutTax + " " + salaryWithTax);
+        }
+
+        System.out.println("TOTAL: " + totalSalaryWithoutTax + " " + totalSalaryWithTax);
   }
 }

@@ -1,4 +1,4 @@
-package HomeWork4;/*
+package homeWork4;/*
 3. Розстрочка
 
 Програма запитує користувача загальну суму кредиту та місячний
@@ -24,25 +24,31 @@ public class hw4_3 {
         System.out.println("Який щомісячний відсоток на залишок по кредиту? ");
             double monthlyPercent = sc.nextInt();
 
-        System.out.println("Який твій перший внесок? ");
-            int firstPayment = sc.nextInt();
 
-        System.out.println("Який строк кредиту в місяцях? ");
-            int months = sc.nextInt();
+        System.out.println("Оберіть варіант розрахунку:");
+        System.out.println("Розрахувати кількість щомісячних платежів для повного погашення кредиту - ввести 1.");
+        System.out.println("Розрахувати суму щомісячного платежу - ввести 2.");
 
-        System.out.println("Розрахувати суму щомісячного платежу - ввести 1. Розрахувати кількість " +
-             "щомісячних платежів - ввести 2. ");
-            double choice = sc.nextInt();
-
-            double loanCredit = sumCredit - firstPayment;
-            double monthlyPayment = (firstPayment  + loanCredit * monthlyPercent/100);
-            double numberPayments = (loanCredit / monthlyPayment);
+            int choice = sc.nextInt();
 
             if (choice == 1) {
-                System.out.println("Щомісячний платіж складвє: " + monthlyPayment);
+                System.out.println("Введіть суму щомісячного платежа.");
+                double monthlyPayment = sc.nextDouble();
+                int numPayments = (int) Math.ceil(-(Math.log(1 - monthlyPercent/100/12 * sumCredit / monthlyPayment) /
+                        Math.log(1 + monthlyPercent/100/12)));
+                System.out.println("Кількість щомісячних платежів для повног погашення кредиту: " + numPayments);
+
             }
-            if (choice == 2){
-                System.out.println("Ваш кредит буде погашен якщо ви зробите " + numberPayments + " платіж(ів)");
+            else if (choice == 2){
+                System.out.println("Введість кількість платежів: ");
+                int numPayments = sc.nextInt();
+
+                double monthlyPayment = (sumCredit * monthlyPercent/100/12) /
+                        (1 - Math.pow(1 + monthlyPercent/100/12, -numPayments));
+                System.out.println("Сума щомісячного платежа становить: %.2f%n" + monthlyPayment);
+            }
+            else {
+                System.out.println("Ви ввели некоректний варіант, спробуйте ще раз.");
             }
     }
 }

@@ -43,7 +43,7 @@ public class hw4_1 {
 
     public static void main (String[] args) {
 
-        String userAnswer;
+            String userAnswer;
             boolean isContinue = true;
 
             while (isContinue) {
@@ -115,12 +115,11 @@ public class hw4_1 {
                     }
                 }
 
-                System.out.println("Чи хочете вивести ще одну фігуру, напішіть YES");
+                System.out.println("Чи хочете вивести ще одну фігуру, напішіть YES або NO");
                 userAnswer = sc.next();
 
-                    isContinue = !userAnswer.equals("YES");
-            }
-
+                    isContinue = !userAnswer.equals("NO");
+        }
     }
 }
 

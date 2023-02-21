@@ -1,4 +1,5 @@
-package HomeWork3;/* Розрахунок зарплатні.
+package homeWork3;
+/* Розрахунок зарплатні.
 
 На вхід програми подається номер місяця(1-12), вартість години та вісоток податку.
 Розрахувати зарплатню за місяць з та без податку.
@@ -10,7 +11,7 @@ package HomeWork3;/* Розрахунок зарплатні.
 
 import java.util.Scanner;
 
-public class hw3_3 {
+public class Hw3_3 {
     public static void main(String[] args) {
         int January = Integer.parseInt(args[0]);
         int February = Integer.parseInt(args[1]);

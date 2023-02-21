@@ -1,10 +1,10 @@
-package HomeWork2;
+package homeWork2;
 
 /*
 На вхід програми подається 2 числа.
 Вивести в консоль результат піднесення першого числа в степінь другого числа.
  */
-public class hw2_1 {
+public class Hw2_1 {
     public static void main(String[] args){
 
         int number = Integer.parseInt(args[0]);

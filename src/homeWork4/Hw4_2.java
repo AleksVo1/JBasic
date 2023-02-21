@@ -23,7 +23,7 @@ import java.lang.String;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class hw4_2 {
+public class Hw4_2 {
 
     public static void innerSort(int[] array) {
         PriorityQueue<Integer> sort = new PriorityQueue<>(array.length);

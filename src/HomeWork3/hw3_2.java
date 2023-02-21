@@ -1,4 +1,4 @@
-package HomeWork3;/*
+package homeWork3;/*
 2. Розрахувати вартість товару
 На вхід програми подається вартість товару за одиницю.
 Програма запитує кількість товару, яку ви хочете придбати.
@@ -11,7 +11,7 @@ package HomeWork3;/*
  */
 import java.util.Scanner;
 
-public class hw3_2 {
+public class Hw3_2 {
     public static void main(String[] args) {
 
         int costPerItem = Integer.parseInt(args[0]);

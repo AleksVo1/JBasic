@@ -1,4 +1,4 @@
-package HomeWork2;
+package homeWork2;
 
 import java.util.Scanner;
 /*
@@ -10,7 +10,7 @@ import java.util.Scanner;
 При ххх робочих годин на тиждень з річною зарплатею в ххх та податком хх%
 година часу коштує ххх
  */
-public class hw2_3 {
+public class Hw2_3 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Кількість робочих годин на тиждень:");

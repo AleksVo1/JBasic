@@ -1,4 +1,4 @@
-package HomeWork2;
+package homeWork2;
 
 /*
 Розрахувати місячну і річну зарплатню з податками та без.
@@ -10,7 +10,7 @@ package HomeWork2;
 Зарплатня на рік без податків: ххх
 Зарплатня на рік з податками: ххх
  */
-public class hw2_2 {
+public class Hw2_2 {
     public static void main(String[] args){
         int hours = Integer.parseInt(args[0]);
         int cost = Integer.parseInt(args[1]);

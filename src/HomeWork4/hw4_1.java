@@ -39,7 +39,7 @@ package homeWork4;
 
 import java.util.Scanner;
 
-public class hw4_1 {
+public class Hw4_1 {
 
     public static void main (String[] args) {
 

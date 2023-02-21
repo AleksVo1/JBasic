@@ -1,6 +1,7 @@
-package homeWork4;/*
+package homeWork4;
+/*
 2. Сортування масиву (30 балів)
-На віхд програми подається довільний набір чисел
+На вхід програми подається довільний набір чисел
 Програма має вивести:
 
 - початковий масив
@@ -43,6 +44,7 @@ public class Hw4_2 {
         System.out.println("Basic sorting:");
 
             for (int i = 0; i < array.length; i++) {
+
                 System.out.print(" " + array[i]);
             }
 // ascending sorting

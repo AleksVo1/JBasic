@@ -18,7 +18,7 @@ DEC XX YY
 TOTAL: XX YY
  */
 
-public class hw4_4 {
+public class Hw4_4 {
     public static void main (String[] args){
 
         int hourlyCost = Integer.parseInt(args[0]);

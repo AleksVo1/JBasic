@@ -15,7 +15,7 @@ package homeWork4;/*
 
 import java.util.Scanner;
 
-public class hw4_3 {
+public class Hw4_3 {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Який загальний розмір кредиту? ");

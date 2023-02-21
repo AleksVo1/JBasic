@@ -9,7 +9,7 @@ package HomeWork3;/*
 
 import java.util.Scanner;
 
-public class hw3_1 {
+public class Hw3_1 {
     public static void main (String[] args){
         int number;
         int number2;

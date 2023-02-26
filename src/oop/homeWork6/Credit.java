@@ -7,6 +7,7 @@ public class Credit {
     private double creditAmount;
     private double downPayment;
 
+
     public Credit(int creditTerm, double percent, double creditAmount, double downPayment) {
         this.creditTerm = creditTerm;
         this.percent = percent;

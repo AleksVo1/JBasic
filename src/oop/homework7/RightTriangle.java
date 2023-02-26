@@ -2,9 +2,9 @@ package oop.homework7;
 
 public class RightTriangle extends Triangle{
 
-    public RightTriangle(double side1, double side2) {
+    public RightTriangle(double side1, double side2, double side3) {
 
-        super(side1, side2, Math.sqrt(side1 * side1 + side2 * side2));
+        super(side1, side2, side3);
     }
 
     @Override
@@ -16,6 +16,6 @@ public class RightTriangle extends Triangle{
     @Override
     public double getPerimeter(){
 
-        return 2 * side1 * side2;
+        return side1 + side1 + side2;
     }
 }

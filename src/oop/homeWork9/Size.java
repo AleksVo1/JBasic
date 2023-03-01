@@ -1,6 +1,7 @@
 package oop.homeWork9;
 
 public enum Size {
+
     XS("Extra Small", 1, 1),
     S("Small", 2, 2),
     M("Medium", 3, 3),

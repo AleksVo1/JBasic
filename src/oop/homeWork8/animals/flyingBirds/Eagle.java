@@ -2,15 +2,19 @@ package oop.homeWork8.animals.flyingBirds;
 
 public class Eagle extends FlyingBirds implements Speed {
 
-    private final double socketWeight;
+    private final double neckLength;
     private final double speed;
+    private double flyUp;
+    private double flyDown;
 
     public Eagle(String color, int weight, double flightAltitude, double flightLength,
-                 double socketWeight, double speed) {
+                 double speed, int neckLength, double flyUp, double flyDown) {
 
         super(color, weight, flightAltitude, flightLength);
-        this.socketWeight = socketWeight;
         this.speed = speed;
+        this.neckLength = neckLength;
+        this.flyUp = flyUp;
+        this.flyDown = flyDown;
     }
 
     @Override
@@ -43,8 +47,18 @@ public class Eagle extends FlyingBirds implements Speed {
         return speed;
     }
 
-    public double getSocketWeight() {
+    public double getNeckLength() {
 
-        return socketWeight;
+        return neckLength;
+    }
+
+    @Override
+    public void flyDown() {
+
+    }
+
+    @Override
+    public void flyUp() {
+
     }
 }

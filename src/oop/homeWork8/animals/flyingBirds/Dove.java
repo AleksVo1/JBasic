@@ -1,16 +1,22 @@
 package oop.homeWork8.animals.flyingBirds;
 
-public class Dove extends FlyingBirds implements Speed{
+import oop.homeWork8.Fly;
+
+public class Dove extends FlyingBirds implements Speed, Fly {
 
     private final double speed;
     private final String headColor;
+    private double flyUp;
+    private double flyDown;
 
-    public Dove(String color, int weight, double flightAltitude, double flightLength,
-                double speed, String headColor) {
 
+    public Dove(String color, int weight, double flightAltitude, double flightLength, double speed,
+                String headColor, double flyUp, double flyDown) {
         super(color, weight, flightAltitude, flightLength);
         this.speed = speed;
         this.headColor = headColor;
+        this.flyUp = flyUp;
+        this.flyDown = flyDown;
     }
 
     @Override
@@ -46,5 +52,15 @@ public class Dove extends FlyingBirds implements Speed{
     public String getHeadColor() {
 
         return headColor;
+    }
+
+    @Override
+    public void flyUp() {
+
+    }
+
+    @Override
+    public void flyDown() {
+
     }
 }

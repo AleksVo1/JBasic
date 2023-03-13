@@ -32,4 +32,8 @@ public abstract class FlyingBirds extends Animals {
 
         return flightLength;
     }
+
+    public abstract void flyDown();
+
+    public abstract void flyUp();
 }

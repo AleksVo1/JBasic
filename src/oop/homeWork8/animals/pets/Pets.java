@@ -7,7 +7,7 @@ public abstract class Pets extends Animals {
     protected double height;
 
     public Pets(String color, String weight, double height) {
-        super(color, weight);
+        super(color, Integer.parseInt(weight));
         this.height = height;
     }
 

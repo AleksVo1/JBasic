@@ -54,7 +54,7 @@ public class Hw3_3 {
             + (weeks * workingDaysInWeek));
 
             System.out.println("Зарплатня за Лютй з податком: " + costPerWorkingDayWithTax * workingDaysInMonth);
-            System.out.println("Зарплатня за Лютй без податка: " + costPerWorkingDayWithoutTax * workingDaysInMonth);
+            System.out.println("Зарплатня за Лютй без податку: " + costPerWorkingDayWithoutTax * workingDaysInMonth);
         }
         if (month == March) {
             int days = 31;
@@ -62,7 +62,7 @@ public class Hw3_3 {
             + (weeks * workingDaysInWeek));
 
             System.out.println("Зарплатня за Март з податком: " + costPerWorkingDayWithTax * workingDaysInMonth);
-            System.out.println("Зарплатня за Март без податка: " + costPerWorkingDayWithoutTax * workingDaysInMonth);
+            System.out.println("Зарплатня за Март без податку: " + costPerWorkingDayWithoutTax * workingDaysInMonth);
         }
         if (month == April) {
             int days = 30;

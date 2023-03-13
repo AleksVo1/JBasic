@@ -7,7 +7,7 @@ public abstract class Fish extends Animals {
     protected int divingDepth;
 
     public Fish(String color, String weight, int divingDepth) {
-        super(color, weight);
+        super(color, Integer.parseInt(weight));
         this.divingDepth = divingDepth;
     }
 

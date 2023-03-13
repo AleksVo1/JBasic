@@ -3,13 +3,13 @@ package oop.homeWork10;
 import java.time.LocalDateTime;
 import java.time.Period;
 
-public abstract class Products {
+public abstract class Product {
 
     private final String productName;
     private final LocalDateTime productionDateTime;
     private final Period shelfLife;
 
-    public Products(String productName, LocalDateTime productionDateTime, Period shelfLife) {
+    public Product(String productName, LocalDateTime productionDateTime, Period shelfLife) {
 
         this.productName = productName;
         this.productionDateTime = productionDateTime;

@@ -12,7 +12,7 @@ public class ProductFactory {
     private ProductFactory() {
     }
 
-    public static Products createFoodProduct (String productName, LocalDateTime productionDateTime, Period shelfLife){
+    public static Product createFoodProduct (String productName, LocalDateTime productionDateTime, Period shelfLife){
 
         totalFoodCount++;
         totalProductCount++;
@@ -20,8 +20,8 @@ public class ProductFactory {
             return new Grocery(productName, productionDateTime, shelfLife);
     }
 
-    public static Products createNonFoodProduct (String productName, LocalDateTime productionDateTime,
-                                                 Period shelfLife){
+    public static Product createNonFoodProduct (String productName, LocalDateTime productionDateTime,
+                                                Period shelfLife){
 
         totalNonFoodCount++;
         totalProductCount++;

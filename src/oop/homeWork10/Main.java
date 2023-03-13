@@ -9,15 +9,15 @@ public class Main {
 
     public static void main(String[] args){
 
-        Products orange = ProductFactory.createFoodProduct("orange", LocalDateTime.now(),
+        Product orange = ProductFactory.createFoodProduct("orange", LocalDateTime.now(),
                                                             Period.ofDays(6));
-        Products potatoes = ProductFactory.createFoodProduct("potatoes", LocalDateTime.now(),
+        Product potatoes = ProductFactory.createFoodProduct("potatoes", LocalDateTime.now(),
                                                             Period.ofDays(9));
-        Products apple = ProductFactory.createFoodProduct("apple", LocalDateTime.now(), Period.ofDays(7));
+        Product apple = ProductFactory.createFoodProduct("apple", LocalDateTime.now(), Period.ofDays(7));
 
-        Products pen = createNonFoodProduct("pen", LocalDateTime.now(), Period.ofYears(5));
-        Products pencil = createNonFoodProduct("pencil", LocalDateTime.now(), Period.ofYears(9));
-        Products cup = createNonFoodProduct("cup", LocalDateTime.now(), Period.ofYears(5));
+        Product pen = createNonFoodProduct("pen", LocalDateTime.now(), Period.ofYears(5));
+        Product pencil = createNonFoodProduct("pencil", LocalDateTime.now(), Period.ofYears(9));
+        Product cup = createNonFoodProduct("cup", LocalDateTime.now(), Period.ofYears(5));
 
 
         System.out.println("Загалом створено товарів: " + ProductFactory.getTotalProductCount());

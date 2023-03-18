@@ -11,7 +11,7 @@ public class CountCharacters {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Введіть речення:");
-        String sentence = sc.nextLine().toLowerCase();
+        String sentence = sc.nextLine();
 
         Map<Character, Integer> newSentence = new HashMap<>();
 

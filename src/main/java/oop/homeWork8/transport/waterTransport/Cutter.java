@@ -1,6 +1,7 @@
-package oop.homeWork8.transport.waterTransport;
+package main.java.oop.homeWork8.transport.waterTransport;
 
-import oop.homeWork8.transport.Properties;
+
+import main.java.oop.homeWork8.transport.Properties;
 
 public class Cutter extends WaterTransport implements Properties, Displacement {
 

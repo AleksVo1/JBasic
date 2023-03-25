@@ -1,6 +1,6 @@
-package oop.homeWork8.transport.airTransport;
+package main.java.oop.homeWork8.transport.airTransport;
 
-import oop.homeWork8.transport.Properties;
+import main.java.oop.homeWork8.transport.Properties;
 
 public class Helicopter extends AirTransport implements Properties, Distance {
 

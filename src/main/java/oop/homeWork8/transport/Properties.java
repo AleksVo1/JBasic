@@ -1,4 +1,4 @@
-package oop.homeWork8.transport;
+package main.java.oop.homeWork8.transport;
 
 public interface Properties {
 

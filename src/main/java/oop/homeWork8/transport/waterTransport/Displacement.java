@@ -1,4 +1,4 @@
-package oop.homeWork8.transport.waterTransport;
+package main.java.oop.homeWork8.transport.waterTransport;
 
 public interface Displacement {
 

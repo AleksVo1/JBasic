@@ -1,4 +1,4 @@
-package main.java.oop.homeWork9;
+package oop.homeWork9;
 
 public enum Size {
 

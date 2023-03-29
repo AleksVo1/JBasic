@@ -1,17 +1,5 @@
-package main.java.oop.homeWork6;
+package oop.homeWork6;
 
-/*
-1. Описати клас Product
-        Поля:
-        - Назва товару
-        - артикул (код товару)
-        - ціна
-        - опис товару
-        - наявність (є чи немає)
-        Методи:
- - геттери
- - сеттери
- */
 public class Product {
     private String name;
     private int productCode;

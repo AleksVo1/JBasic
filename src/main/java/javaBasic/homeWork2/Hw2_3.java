@@ -1,4 +1,4 @@
-package main.java.javaBasic.homeWork2;
+package javaBasic.homeWork2;
 
 import java.util.Scanner;
 /*

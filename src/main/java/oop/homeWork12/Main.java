@@ -1,4 +1,4 @@
-package main.java.oop.homeWork12;
+package oop.homeWork12;
 
 import java.util.ArrayList;
 import java.util.Collections;

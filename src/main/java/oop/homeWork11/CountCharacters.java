@@ -1,4 +1,4 @@
-package main.java.oop.homeWork11;
+package oop.homeWork11;
 
 import java.util.HashMap;
 import java.util.Map;

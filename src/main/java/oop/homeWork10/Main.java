@@ -1,9 +1,9 @@
-package main.java.oop.homeWork10;
+package oop.homeWork10;
 
 import java.time.LocalDateTime;
 import java.time.Period;
 
-import static main.java.oop.homeWork10.ProductFactory.createNonFoodProduct;
+import static oop.homeWork10.ProductFactory.createNonFoodProduct;
 
 
 public class Main {

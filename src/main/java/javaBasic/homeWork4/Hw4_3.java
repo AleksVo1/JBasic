@@ -1,4 +1,4 @@
-package main.java.javaBasic.homeWork4;/*
+package javaBasic.homeWork4;/*
 3. Розстрочка
 
 Програма запитує користувача загальну суму кредиту та місячний

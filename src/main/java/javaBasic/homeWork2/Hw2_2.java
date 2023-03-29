@@ -1,4 +1,4 @@
-package main.java.javaBasic.homeWork2;
+package javaBasic.homeWork2;
 
 /*
 Розрахувати місячну і річну зарплатню з податками та без.

@@ -1,4 +1,4 @@
-package main.java.javaBasic.homeWork4;
+package javaBasic.homeWork4;
 
 import java.util.Calendar;
 /*

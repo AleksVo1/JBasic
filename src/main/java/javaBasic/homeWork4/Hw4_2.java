@@ -1,4 +1,4 @@
-package main.java.javaBasic.homeWork4;
+package javaBasic.homeWork4;
 /*
 2. Сортування масиву (30 балів)
 На вхід програми подається довільний набір чисел

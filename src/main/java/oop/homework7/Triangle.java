@@ -1,4 +1,4 @@
-package main.java.oop.homework7;
+package oop.homework7;
 
 public class Triangle extends Figure {
 

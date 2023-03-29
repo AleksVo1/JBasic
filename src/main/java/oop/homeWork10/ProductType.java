@@ -1,4 +1,4 @@
-package main.java.oop.homeWork10;
+package oop.homeWork10;
 
 public enum ProductType {
 

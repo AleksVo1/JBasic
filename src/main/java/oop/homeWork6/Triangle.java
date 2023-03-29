@@ -1,4 +1,4 @@
-package main.java.oop.homeWork6;
+package oop.homeWork6;
 
 public class Triangle {
     private double firstSide;

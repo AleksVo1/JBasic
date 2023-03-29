@@ -1,4 +1,4 @@
-package main.java.javaBasic.homeWork2;
+package javaBasic.homeWork2;
 
 /*
 На вхід програми подається 2 числа.

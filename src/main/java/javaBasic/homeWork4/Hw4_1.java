@@ -1,4 +1,4 @@
-package main.java.javaBasic.homeWork4;
+package javaBasic.homeWork4;
 /*
 Програма запитує користувача, яку з фігур намалювати.
 В залежності від фігури програма запитує аргументи для фігури.

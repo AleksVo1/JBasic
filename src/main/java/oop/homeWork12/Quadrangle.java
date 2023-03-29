@@ -1,4 +1,4 @@
-package main.java.oop.homeWork12;
+package oop.homeWork12;
 
 public class Quadrangle extends Figure {
 

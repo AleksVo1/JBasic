@@ -15,25 +15,65 @@ public class QuadraticEquations {
         System.out.println("Ведіть коефіцієнт с квадратного рівняння?");
             double c = sc.nextInt();
 
-            double discriminant = Math.pow(b, 2) - 4 * a * c;
+                double discriminant = Math.pow(b, 2) - 4 * a * c;
 
-            if(discriminant > 0){
-                   double x1 = (- b - Math.sqrt(discriminant)) / (2 * a);
-                   double x2 = (- b + Math.sqrt(discriminant)) / (2 * a);
+        if (discriminant > 0) {
 
-                        System.out.println("Корені рівняння: х1 = " + x1 + ", x2 = " + x2);
+            PositiveDiscriminant positiveDiscriminant = new PositiveDiscriminant(a, b, c);
+
+                System.out.println("Корені рівняння: х1 = " + positiveDiscriminant.getX1() +
+                        ", x2 = " + positiveDiscriminant.getX2());
+        }
+            else if (discriminant == 0) {
+                ZeroDiscriminant zeroDiscriminant = new ZeroDiscriminant(a, b);
+
+                    System.out.println("Рівняння має єдиний корінь: х = " + zeroDiscriminant.getX());
 
             }
-                else if (discriminant == 0) {
-                        double x = - b / (2 * a);
+                else {
+                    System.out.println("Рівняння не має дійсних коренів");
+                }
+    }
 
-                            System.out.println("Рівняння має єдиний корінь: х = " + x);
+    public static class PositiveDiscriminant {
+        double a;
+        double b;
+        double c;
+        double discriminant;
+        double x1;
+        double x2;
 
+        public PositiveDiscriminant(double a, double b, double c) {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+            this.discriminant = Math.pow(b, 2) - 4 * a * c;
+            this.x1 = (- b - Math.sqrt(discriminant)) / (2 * a);
+            this.x2 = (- b + Math.sqrt(discriminant)) / (2 * a);
+        }
+
+                public double getX1() {
+                    return x1;
                 }
 
-                    else {
-                        System.out.println("Рівняння не має дійсних коренів");
+                public double getX2() {
+                    return x2;
+                }
+    }
 
-                    }
+    public static class ZeroDiscriminant {
+        double a;
+        double b;
+        double x;
+
+        public ZeroDiscriminant(double a, double b) {
+            this.a = a;
+            this.b = b;
+            this.x = - b / (2 * a);
+        }
+
+        public double getX() {
+                return x;
+            }
     }
 }

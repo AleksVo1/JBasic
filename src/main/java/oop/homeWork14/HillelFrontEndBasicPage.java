@@ -16,7 +16,7 @@ public class HillelFrontEndBasicPage {
     private WebElement showAllButton;
 
     @FindBy(id = "coachesSection")
-    private List<WebElement> coaches;
+    private WebElement coachSection;
 
     public void clickShowAll() {
         showAllButton.click();
@@ -25,11 +25,9 @@ public class HillelFrontEndBasicPage {
 
     public List<String> getListCoaches(){
         List<String> coachesNames = new ArrayList<>();
-        for (WebElement coach : coaches) {
-            WebElement card = coach.findElement(By.xpath
-                    ("/html/body/div[1]/main/section[6]/div/div/ul/li[1]/a/div/div[2]/p[1]"));
-
-                        coachesNames.add(card.getText());
+        List<WebElement> cards = coachSection.findElements(By.cssSelector("p.coach-card_name"));
+        for (WebElement card : cards) {
+            coachesNames.add(card.getText());
         }
         return coachesNames;
 

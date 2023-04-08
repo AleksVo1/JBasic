@@ -84,7 +84,7 @@ public class HillelTestingPage {
 
     public void goToCategory (String category){
 
-        switch (category.toLowerCase()){
+        switch (category){
 
             case "програмування":
                 categoryProgramming.click();

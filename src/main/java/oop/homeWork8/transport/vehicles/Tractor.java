@@ -1,6 +1,6 @@
-package main.java.oop.homeWork8.transport.vehicles;
+package oop.homeWork8.transport.vehicles;
 
-import main.java.oop.homeWork8.transport.Properties;
+import oop.homeWork8.transport.Properties;
 
 public class Tractor extends Vehicles implements Properties, Wheels {
 

@@ -1,7 +1,7 @@
-package main.java.oop.homeWork8.animals.pets;
+package oop.homeWork8.animals.pets;
 
 
-import main.java.oop.homeWork8.animals.Animals;
+import oop.homeWork8.animals.Animals;
 
 public abstract class Pets extends Animals {
 

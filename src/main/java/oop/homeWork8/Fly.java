@@ -1,4 +1,4 @@
-package main.java.oop.homeWork8;
+package oop.homeWork8;
 
 public interface Fly {
 

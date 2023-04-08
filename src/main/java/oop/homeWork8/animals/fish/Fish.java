@@ -1,6 +1,6 @@
-package main.java.oop.homeWork8.animals.fish;
+package oop.homeWork8.animals.fish;
 
-import main.java.oop.homeWork8.animals.Animals;
+import oop.homeWork8.animals.Animals;
 
 public abstract class Fish extends Animals {
 

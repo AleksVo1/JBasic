@@ -1,7 +1,7 @@
-package main.java.oop.homeWork8.transport.waterTransport;
+package oop.homeWork8.transport.waterTransport;
 
 
-import main.java.oop.homeWork8.transport.Transport;
+import oop.homeWork8.transport.Transport;
 
 public abstract class WaterTransport extends Transport {
 

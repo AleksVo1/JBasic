@@ -1,4 +1,4 @@
-package main.java.oop.homeWork8.animals;
+package oop.homeWork8.animals;
 
 public abstract class Animals {
 

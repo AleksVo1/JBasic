@@ -1,7 +1,7 @@
-package main.java.oop.homeWork8.animals.flightlessBirds;
+package oop.homeWork8.animals.flightlessBirds;
 
 
-import main.java.oop.homeWork8.animals.Animals;
+import oop.homeWork8.animals.Animals;
 
 public abstract class FlightlessBirds extends Animals {
 

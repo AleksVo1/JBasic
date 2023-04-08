@@ -1,4 +1,4 @@
-package main.java.oop.homeWork8.animals.pets;
+package oop.homeWork8.animals.pets;
 
 public class Hamster extends Pets implements Length{
 

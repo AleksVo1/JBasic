@@ -1,4 +1,4 @@
-package main.java.oop.homeWork8.animals.flyingBirds;
+package oop.homeWork8.animals.flyingBirds;
 
 public interface Speed {
 

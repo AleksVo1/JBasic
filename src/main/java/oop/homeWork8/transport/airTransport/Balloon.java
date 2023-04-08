@@ -1,6 +1,6 @@
-package main.java.oop.homeWork8.transport.airTransport;
+package oop.homeWork8.transport.airTransport;
 
-import main.java.oop.homeWork8.transport.Properties;
+import oop.homeWork8.transport.Properties;
 
 public class Balloon extends AirTransport implements Properties, Distance {
 

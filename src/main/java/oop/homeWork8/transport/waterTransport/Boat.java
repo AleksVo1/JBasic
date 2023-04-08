@@ -1,7 +1,7 @@
-package main.java.oop.homeWork8.transport.waterTransport;
+package oop.homeWork8.transport.waterTransport;
 
 
-import main.java.oop.homeWork8.transport.Properties;
+import oop.homeWork8.transport.Properties;
 
 public class Boat extends WaterTransport implements Properties, Displacement {
 

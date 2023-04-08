@@ -1,4 +1,4 @@
-package main.java.oop.homeWork8.transport.airTransport;
+package oop.homeWork8.transport.airTransport;
 
 public interface Distance {
 

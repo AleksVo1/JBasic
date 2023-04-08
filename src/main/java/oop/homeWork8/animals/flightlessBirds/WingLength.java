@@ -1,4 +1,4 @@
-package main.java.oop.homeWork8.animals.flightlessBirds;
+package oop.homeWork8.animals.flightlessBirds;
 
 public interface WingLength {
 

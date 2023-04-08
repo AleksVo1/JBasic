@@ -1,7 +1,7 @@
-package main.java.oop.homeWork8.animals.flyingBirds;
+package oop.homeWork8.animals.flyingBirds;
 
 
-import main.java.oop.homeWork8.Fly;
+import oop.homeWork8.Fly;
 
 public class Stork extends FlyingBirds implements Speed, Fly {
 

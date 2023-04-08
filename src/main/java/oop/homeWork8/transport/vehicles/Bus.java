@@ -1,5 +1,6 @@
-package main.java.oop.homeWork8.transport.vehicles;
-import main.java.oop.homeWork8.transport.Properties;
+package oop.homeWork8.transport.vehicles;
+
+import oop.homeWork8.transport.Properties;
 
 public class Bus extends Vehicles implements Properties {
 

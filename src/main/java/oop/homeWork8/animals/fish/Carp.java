@@ -1,4 +1,4 @@
-package main.java.oop.homeWork8.animals.fish;
+package oop.homeWork8.animals.fish;
 
 public class Carp extends Fish implements Gender{
 

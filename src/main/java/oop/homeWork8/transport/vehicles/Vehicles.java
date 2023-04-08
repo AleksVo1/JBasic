@@ -1,6 +1,6 @@
-package main.java.oop.homeWork8.transport.vehicles;
+package oop.homeWork8.transport.vehicles;
 
-import main.java.oop.homeWork8.transport.Transport;
+import oop.homeWork8.transport.Transport;
 
 public abstract class Vehicles extends Transport {
 

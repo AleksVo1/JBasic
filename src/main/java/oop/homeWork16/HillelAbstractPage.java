@@ -8,11 +8,6 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public abstract class HillelAbstractPage {
 
-    private String courses;
-    private String additionalCourses;
-    private String opportunities;
-    private String category;
-
     public abstract List<String> getCourses();
 
     public abstract List<String> getAdditionalCourses();

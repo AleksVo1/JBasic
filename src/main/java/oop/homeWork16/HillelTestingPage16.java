@@ -17,11 +17,6 @@ public class HillelTestingPage16 extends HillelAbstractPage {
     private final SelenideElement categoryItem = $(".categories__list-item a");
     private final ElementsCollection opportunities = $$(".opportunities_list");
     private final SelenideElement opportunityItem = $(".opportunity-item_title");
-    private final SelenideElement categoryProgramming = $x("//*[@id=\"categories\"]/div/ul/li[1]/a");
-    private final SelenideElement categoryManagement = $x("//*[@id=\"categories\"]/div/ul/li[3]/a");
-    private final SelenideElement categoryMarketing = $x("//*[@id=\"categories\"]/div/ul/li[4]/a");
-    private final SelenideElement categoryDesign = $x("//*[@id=\"categories\"]/div/ul/li[5]/a");
-    private final SelenideElement categoryKids = $x("//*[@id=\"categories\"]/div/ul/li[6]/a");
 
     @Override
     public List<String> getCourses(){
@@ -63,42 +58,11 @@ public class HillelTestingPage16 extends HillelAbstractPage {
     }
 
     @Override
-    public String goToCategory (String category){
+    public String goToCategory(String category) {
+        if (category.equals("тестування")){
 
-        try {
-
-            switch (category) {
-
-                case "програмування":
-                    categoryProgramming.click();
-                    break;
-
-                case "менеджмент":
-                    categoryManagement.click();
-                    break;
-
-                case "маркетинг":
-                    categoryMarketing.click();
-                    break;
-
-                case "дизайн":
-                    categoryDesign.click();
-                    break;
-
-                case "дитячі курси":
-                    categoryKids.click();
-                    break;
-
-                default:
-                    throw new IllegalArgumentException("Invalid category " + category);
-            }
-            return category;
+            return "тестування";
         }
-
-        catch (Exception e){
-            System.err.println("Invalid category " + e.getMessage());
-
-            return null;
-        }
+        return super.goToCategory(category);
     }
 }

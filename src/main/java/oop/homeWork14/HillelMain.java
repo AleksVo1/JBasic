@@ -11,9 +11,9 @@ public class HillelMain {
         WebDriver driver = WebDriverManager.chromedriver().create();
             driver.manage().window().maximize();
 
-                driver.get(HillelConfigProvider.BASE_URL);
+                driver.get(ConfigProvider.BASE_URL);
 
-                    Thread.sleep(5000);
+                Thread.sleep(5000);
 
         HillelHomePage hillelHomePage = PageFactory.initElements(driver, HillelHomePage.class);
             hillelHomePage.ClickToProgramming();

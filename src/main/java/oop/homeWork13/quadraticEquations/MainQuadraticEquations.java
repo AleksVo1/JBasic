@@ -3,7 +3,7 @@ package oop.homeWork13.quadraticEquations;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class MainQuadraticEquations {
 
     public static void main(String[] args) {
 
@@ -18,6 +18,7 @@ public class Main {
 
             System.out.println("Ведіть коефіцієнт с квадратного рівняння?");
             double c = sc.nextInt();
+
 
             QuadraticEquations quadraticEquations = new QuadraticEquations(a, b, c);
 
